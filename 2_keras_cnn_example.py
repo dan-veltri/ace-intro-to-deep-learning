@@ -102,12 +102,16 @@ print("Loading in data.")
 print("\n\nLoaded {} training examples with {} responses and {} testing examples with {} responses.".format(len(x_train),len(y_train),len(x_test),len(y_test)))
 
 
-#Reshape and normalize the image data. Adjust the responses to be categorical
+# Reshape and normalize the image data. Adjust the responses to be categorical
 x_train = x_train.reshape(x_train.shape[0],32,32,3).astype('float32')/255
 x_test = x_test.reshape(y_test.shape[0],32,32,3).astype('float32')/255
 y_train = to_categorical(y_train,10)
 y_test = to_categorical(y_test,10)
 
+# Let's just train on the first few thousand samples to speed things up!
+# Note we shouldn't expect good performance with a sample this small.
+x_train = x_train[0:2000,:]
+y_train = y_train[0:2000,:]
 
 # Define our sequential model
 print("\nBuilding model...")
