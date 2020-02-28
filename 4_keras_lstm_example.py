@@ -69,7 +69,7 @@ num_epochs = 10
 num_batches = 32
 
 # Function to enable us to plot our training history
-def plot_model_history(model_history, save_plot=False, plot_filename='train_history_plot.png'):
+def plot_model_history(model_history, save_plot=True, plot_filename='train_history_plot.png'):
     '''
     On entry: model_history is output of keras model.fit, save_plot is boolean, plot_filename is save location
     On exit: If save_plot is True, figure saved to plot_filename path, else matplot figure is shown.    
