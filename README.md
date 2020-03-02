@@ -8,8 +8,8 @@ Example files are located in: `/home/bcbb_teaching_files/intro_deep_learning/`
 
 NOTE: I suggest you either clone this GitHub repo or copy the HPC files to a folder in your local home directory!
 
-Activate the conda environment: `source activate /home/bcbb_teaching_files/intro_deep_learning/envs`
-This should make Tensorflow2 and other libraries available to you.
+Activate the conda environment: `source activate /home/bcbb_teaching_files/intro_deep_learning/envs`.
+This should make Tensorflow2 and other libraries available to you. At the moment, it appears an old version of conda is still installed causing the `conda activate` command to not work properly.
 
 ## Installing on your own machine
 
