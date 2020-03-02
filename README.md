@@ -27,7 +27,7 @@ To run these you'll need python and the following packages installed. :
   * h5py
   * Pillow
   * matplotlib
-  * tensorflow (ver. 1)
+  * tensorflow
   * keras
   
 I recommend installing packages using a [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/). On a Linux machine, `pip` should work for the above packages but if you have Anaconda installed, you can easily use the `deep_learning_environment.yml` file to make a `deep_learning` environment via the command:
