@@ -22,9 +22,9 @@ To run these you'll need python and the following packages installed. :
   * tensorflow (ver. 1)
   * keras
   
-I recommend installing packages using a [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/). On a Linux environment, PIP should work for the above but if you have Anaconda installed, you can use the `deep_learning_environment.yml` file to make a `deep_learning` environment via:
+I recommend installing packages using a [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/). On a Linux machine, `pip` should work for the above packages but if you have Anaconda installed, you can easily use the `deep_learning_environment.yml` file to make a `deep_learning` environment via the command:
 `conda create -f deep_learning_environment.yml`.
 
 You can install to a specific directory using: `conda create --prefix ./envs -f deep_learning_environment.yml`  where `./envs` is the directory you want to install to. 
 
-*Note For Mac Users! - I recommend installing `tensorflow` via Anaconda rather than PIP (also applies to R users). You might also need to also install the `nomkl` package to prevent a multithreading bug in `numpy`.*
+*Note For Mac Users! - I recommend installing `tensorflow` via Anaconda rather than `pip` (also applies to R users). You might also need to also install the `nomkl` package to prevent a multithreading bug in `numpy`.*
