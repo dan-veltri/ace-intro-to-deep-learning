@@ -13,7 +13,7 @@ This should make Tensorflow2 and other libraries available to you.
 
 ## Installing on your own machine
 
-To run these you'll need python and the following pip packages installed. As Keras updates a lot (often breaking older code syntax) note the package version numbers the code was tested on. I recommend installing packages using a [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/):
+To run these you'll need python and the following packages installed. :
   * numpy 
   * scikit-learn
   * h5py
@@ -22,4 +22,9 @@ To run these you'll need python and the following pip packages installed. As Ker
   * tensorflow (ver. 1)
   * keras
   
-*Note For Mac Users: I recommend installing `tensorflow` via Anaconda rather than PIP (also applies to R users). You might also need to also install the `nomkl` package to prevent a multithreading bug in `numpy`.*
+I recommend installing packages using a [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/). On a Linux environment, PIP should work for the above but if you have Anaconda installed, you can use the `deep_learning_environment.yml` file to make a `deep_learning` environment via:
+`conda create -f deep_learning_environment.yml`.
+
+You can install to a specific directory using: `conda create --prefix ./envs -f deep_learning_environment.yml`  where `./envs` is the directory you want to install to. 
+
+*Note For Mac Users! - I recommend installing `tensorflow` via Anaconda rather than PIP (also applies to R users). You might also need to also install the `nomkl` package to prevent a multithreading bug in `numpy`.*
