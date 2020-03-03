@@ -58,8 +58,8 @@ num_epochs = 10              # Rounds of training
 num_batches = 32             # No. of samples per patch to train at a time
 
 # Paths to train/test images
-train_img_location = './cell_images_mini/Train'
-test_img_location = './cell_images_mini/Test'
+train_img_location = '../cell_images_mini/Train'
+test_img_location = '../cell_images_mini/Test'
 
 
 # Function to enable us to plot our training history
