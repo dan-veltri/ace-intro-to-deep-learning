@@ -33,8 +33,8 @@ num_epochs <- 5               # Rounds of training
 num_batches <- 32             # No. of samples per patch to train at a time
 
 # Paths to train/test images
-train_img_location <- './cell_images_mini/Train'
-test_img_location <- './cell_images_mini/Test'
+train_img_location <- '../cell_images_mini/Train'
+test_img_location <- '../cell_images_mini/Test'
 
 # Import our dataset using generators- these make it easy for Keras to process many input files
 # Images should be in Train and Test folders and within these should  be two subfolders,
