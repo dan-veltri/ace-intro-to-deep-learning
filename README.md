@@ -1,6 +1,8 @@
 # Intro to Deep Learning
 
-Example scripts for running deep neural networks using Keras and TensorFlow2 in Python.
+* Update (Mar. 3, 2020) * Moved Python scripts to their own folder and added a folder with Keras examples in R.
+
+Example scripts for running deep neural networks using Keras and TensorFlow2 in Python and R.
 
 ## Accessing files to run from the HPC
 
@@ -27,8 +29,7 @@ To run these you'll need python and the following packages installed. :
   * h5py
   * Pillow
   * matplotlib
-  * tensorflow
-  * keras
+  * tensorflow (v2 now includes keras)
   
 I recommend installing packages using a [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/). On a Linux machine, `pip` should work for the above packages but if you have Anaconda installed, you can easily use the `deep_learning_environment.yml` file to make a `deep_learning` environment via the command:
 `conda create -f deep_learning_environment.yml`.
