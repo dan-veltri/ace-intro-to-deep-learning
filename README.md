@@ -1,6 +1,6 @@
 # Intro to Deep Learning
 
-* Update (Mar. 3, 2020) * Moved Python scripts to their own folder and added a folder with Keras examples in R.
+* Update (Mar. 19, 2020) * I've added a starter Python script for today's 'AMP Challenge' along with training and validation sets. The final test set will be added later!
 
 Example scripts for running deep neural networks using Keras and TensorFlow2 in Python and R.
 
