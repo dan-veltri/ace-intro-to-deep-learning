@@ -66,9 +66,15 @@ y_test = np.array(y_test)
 
 # YOU MODEL HERE
 model = Sequential()
-model.add(Embedding(21, embedding_vector_length, input_length=max_length))
+model.add(Embedding(21, ???, input_length=max_length))
+
 ...
 
+model.add(Dense(???, activation=???))
+model.compile(loss='binary_crossentropy', optimizer='???', metrics=['accuracy'])
+
+print("Training now...")
+model.fit(X_train, y_train, epochs=???, batch_size=???, verbose=1)
 
 
 print("\nPredicting validation performance...")
