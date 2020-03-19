@@ -53,8 +53,8 @@ def load_seqs(X, y, seq_file, label=0):
 # We'll give AMPs the label 1, and Decoys the label 0
 X_train, y_train = load_seqs(X_train, y_train, amps_train_file, 1)
 X_train, y_train = load_seqs(X_train, y_train, decoys_train_file, 0)
-X_test, y_test = load_seqs(X_test, y_test, amps_train_file, 1)
-X_test, y_test = load_seqs(X_test, y_test, decoys_train_file, 0)
+X_test, y_test = load_seqs(X_test, y_test, amps_test_file, 1)
+X_test, y_test = load_seqs(X_test, y_test, decoys_test_file, 0)
 
 # Pad input sequences with 0's in front and shuffle
 X_train = sequence.pad_sequences(X_train, maxlen=max_length)
@@ -64,10 +64,10 @@ y_test = np.array(y_test)
 
 
 
-
-model =  .... YOUR CODE HERE ....
-
-
+# YOU MODEL HERE
+model = Sequential()
+model.add(Embedding(21, embedding_vector_length, input_length=max_length))
+...
 
 
 
