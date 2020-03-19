@@ -58,7 +58,7 @@ X_test, y_test = load_seqs(X_test, y_test, decoys_test_file, 0)
 
 # Pad input sequences with 0's in front and shuffle
 X_train = sequence.pad_sequences(X_train, maxlen=max_length)
-X_test = sequence.pad_sequences(X_train, maxlen=max_length)
+X_test = sequence.pad_sequences(X_test, maxlen=max_length)
 X_train, y_train = shuffle(X_train, np.array(y_train))
 y_test = np.array(y_test)
 
