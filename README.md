@@ -1,5 +1,6 @@
 # Intro to Deep Learning
 
+* Update (Mar. 20, 2020) * I've added a start R script in the 'AMP Challenge' folder. Please note that the Python code is not compatible with R's version of Keras. Please see the [RStudio Keras Website](https://keras.rstudio.com) for details on using Keras with R.  
 * Update (Mar. 19, 2020) * I've added a starter Python script for today's 'AMP Challenge' along with training and validation sets. The final test set will be added later!
 
 Example scripts for running deep neural networks using Keras and TensorFlow2 in Python and R.
