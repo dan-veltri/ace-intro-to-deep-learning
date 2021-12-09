@@ -41,4 +41,4 @@ I recommend installing packages using a [virtual environment](http://docs.python
 
 You can install to a specific directory with a custom name for the environment using: `conda env create --prefix ./envs -n myname -f deep_learning_environment.yml`  where `./envs` is the directory you want to install to and `myname` is the name you want to call the environment. 
 
-*Note For Mac Users! - I recommend installing `tensorflow` via Anaconda rather than `pip` (also applies to R users). You might also need to also install the `nomkl` package to prevent a multithreading bug in `numpy`.*
+*Note For Mac Users! - If you run into problems with the scripts crashing, you might also need to also install the `nomkl` package to prevent a multithreading bug in `numpy`.*
