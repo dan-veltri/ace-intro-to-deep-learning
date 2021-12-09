@@ -23,6 +23,7 @@ NOTE: I suggest you either clone this GitHub repo or copy the HPC files to a fol
 `source /home/bcbb_teaching_files/intro_deep_learning/envs/bin/activate`
 
 Hopefully, if things work, this should make Tensorflow v2.1.0 and other libraries available to you to run the examples. You should see the folder path appear at the start of your terminal. Test by running:
+
 `python /home/bcbb_teaching_files/intro_deep_learning/1_keras_hello_world.py` and you should see a small model start to train and predict.
 
 ## Installing the environment on your own machine
