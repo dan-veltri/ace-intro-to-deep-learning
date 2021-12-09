@@ -6,14 +6,14 @@ Example scripts for running deep neural networks using Keras and TensorFlow2 in 
 
 Example files are located in: `/home/bcbb_teaching_files/intro_deep_learning/`
 
-NOTE: I suggest you either clone this GitHub repo or copy the HPC files to a folder in your local home directory! Please do not modify the python scripts in the course directory above.
+NOTE: I suggest you either clone this GitHub repo or copy the HPC files to a folder in your local home directory! Please do not modify the python scripts in the course directory above. Normally, you would want to create your own conda environment with the specific packages you need for your own work - for those using the HPC for the class we will use a shared environment so we cut down on the number of redundant file copies.
 
 #### Activate the conda environment so we can use Tensorflow and Keras on the HPC: 
 
-#### First log into the HPC and check that you have `conda` available to you by typing:
+##### First log into the HPC and check that you have `conda` available to you by typing:
 `which conda`
 
-#### *If nothing is returned* you need to initialize conda for your environment:
+##### *If nothing is returned* you need to initialize conda for your environment:
 `/biocompace/condabin/conda init bash` (now log out and back in again and hopefully `conda` should be available to you)
 
 #### Once you have `conda` available to you type:
