@@ -39,6 +39,6 @@ To run these you'll need python and the following packages installed. :
 I recommend installing packages using a [virtual environment](http://docs.python-guide.org/en/latest/dev/virtualenvs/). On a Linux machine, `pip` should work for the above packages but if you have Anaconda installed, you can easily use the `deep_learning_environment.yml` file to make a `deep_learning` environment via the command:
 `conda env create -f deep_learning_environment.yml`.
 
-You can install to a specific directory using: `conda env create --prefix ./envs -f deep_learning_environment.yml`  where `./envs` is the directory you want to install to. 
+You can install to a specific directory with a custom name for the environment using: `conda env create --prefix ./envs -n myname -f deep_learning_environment.yml`  where `./envs` is the directory you want to install to and `myname` is the name you want to call the environment. 
 
 *Note For Mac Users! - I recommend installing `tensorflow` via Anaconda rather than `pip` (also applies to R users). You might also need to also install the `nomkl` package to prevent a multithreading bug in `numpy`.*
