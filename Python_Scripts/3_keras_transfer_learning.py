@@ -4,7 +4,7 @@
 keras_transfer_learning_malaria.py
 By: Dan Veltri (dan.veltri@gmail.com)
 Date Created: 12.09.2018
-Last Updated: 01.16.2020 - Updated code and plot_model_history for Tensorflow2
+Last Updated: 12.09.2021 - Updated plot code for xticks
 
 Original Paper Concept from: S. Rajaraman et al. PeerJ 6:e4568, 2018.
 Some code modified from: https://www.pyimagesearch.com/2018/12/03/deep-learning-and-medical-image-analysis-with-keras/
@@ -57,7 +57,7 @@ target_img_shape = (128,128) # Dim. of target images
 num_epochs = 10              # Rounds of training
 num_batches = 32             # No. of samples per patch to train at a time
 
-# Paths to train/test images
+# Paths to train/test images - make sure these are present and unzipped!
 train_img_location = '../cell_images_mini/Train'
 test_img_location = '../cell_images_mini/Test'
 
@@ -69,14 +69,14 @@ def plot_model_history(model_history, save_plot=True, plot_filename='train_histo
     On exit: If save_plot is True, figure saved to plot_filename path, else matplot figure is shown.    
     '''
     fig, axs = plt.subplots(1,2,figsize=(15,5))
-
+    
     # summarize history for accuracy on left plot
     axs[0].plot(range(1,len(model_history.history['accuracy'])+1),model_history.history['accuracy'])
     axs[0].plot(range(1,len(model_history.history['val_accuracy'])+1),model_history.history['val_accuracy'])
     axs[0].set_title('Model Accuracy')
     axs[0].set_ylabel('Accuracy')
     axs[0].set_xlabel('Epoch')
-    axs[0].set_xticks(np.arange(1,len(model_history.history['accuracy'])+1),len(model_history.history['accuracy'])/10)
+    axs[0].set_xticks(np.arange(1,len(model_history.history['accuracy'])+1,len(model_history.history['accuracy'])/10))
     axs[0].legend(['train', 'validation'], loc='best')
     
     # summarize history for loss on right plot
@@ -85,7 +85,7 @@ def plot_model_history(model_history, save_plot=True, plot_filename='train_histo
     axs[1].set_title('Model Loss')
     axs[1].set_ylabel('Loss')
     axs[1].set_xlabel('Epoch')
-    axs[1].set_xticks(np.arange(1,len(model_history.history['loss'])+1),len(model_history.history['loss'])/10)
+    axs[1].set_xticks(np.arange(1,len(model_history.history['loss'])+1,len(model_history.history['loss'])/10))
     axs[1].legend(['train', 'test'], loc='best')
     
     if save_plot:

@@ -3,7 +3,7 @@
  keras_hello_world.R
  By: Dan Veltri (dan.veltri@gmail.com)
  Created: 12.04.2018
- Last Updated: 01.16.2020 - Updated code and plot_model_history for Tensorflow2
+Last Updated: 12.09.2021 - Updated plot code for xticks
  
  A basic 'hello world' example to test your Keras+TensorFlow install.
 
@@ -50,7 +50,7 @@ def plot_model_history(model_history, save_plot=True, plot_filename='train_histo
     axs[0].set_title('Model Accuracy')
     axs[0].set_ylabel('Accuracy')
     axs[0].set_xlabel('Epoch')
-    axs[0].set_xticks(np.arange(1,len(model_history.history['accuracy'])+1),len(model_history.history['accuracy'])/10)
+    axs[0].set_xticks(np.arange(1,len(model_history.history['accuracy'])+1,len(model_history.history['accuracy'])/10))
     axs[0].legend(['train', 'validation'], loc='best')
     
     # summarize history for loss on right plot
@@ -59,7 +59,7 @@ def plot_model_history(model_history, save_plot=True, plot_filename='train_histo
     axs[1].set_title('Model Loss')
     axs[1].set_ylabel('Loss')
     axs[1].set_xlabel('Epoch')
-    axs[1].set_xticks(np.arange(1,len(model_history.history['loss'])+1),len(model_history.history['loss'])/10)
+    axs[1].set_xticks(np.arange(1,len(model_history.history['loss'])+1,len(model_history.history['loss'])/10))
     axs[1].legend(['train', 'test'], loc='best')
     
     if save_plot:
