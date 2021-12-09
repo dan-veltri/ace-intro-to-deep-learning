@@ -1,28 +1,31 @@
-# Intro to Deep Learning
-
-* Update (Mar. 20, 2020) * I've added a start R script in the 'AMP Challenge' folder. Please note that the Python code is not compatible with R's version of Keras. Please see the [RStudio Keras Website](https://keras.rstudio.com) for details on using Keras with R.  
-* Update (Mar. 19, 2020) * I've added a starter Python script for today's 'AMP Challenge' along with training and validation sets. The final test set will be added later!
+# Intro to Deep Learning [December 10th, 2021]
 
 Example scripts for running deep neural networks using Keras and TensorFlow2 in Python and R.
 
-## Accessing files to run from the HPC
+## Accessing files to run from the HPC (if using your own machine, skip this and see below!)
 
 Example files are located in: `/home/bcbb_teaching_files/intro_deep_learning/`
 
-NOTE: I suggest you either clone this GitHub repo or copy the HPC files to a folder in your local home directory!
+NOTE: I suggest you either clone this GitHub repo or copy the HPC files to a folder in your local home directory! Please do not modify the python scripts in the course directory above.
 
-Activate the conda environment: 
+## Activate the conda environment so we can use Tensorflow and Keras on the HPC: 
 
+### First log into the HPC and check that you have `conda` available to you by typing:
+`which conda`
+
+#### *If nothing is returned* you need to initialize conda for your environment:
+`/biocompace/condabin/conda init bash` (now log out and back in again and hopefully `conda` should be available to you)
+
+#### Once you have `conda` available to you type:
 `conda activate /home/bcbb_teaching_files/intro_deep_learning/envs`
 
-If that does not work try the following:
+#### If that does not work try the following:
+`source /home/bcbb_teaching_files/intro_deep_learning/envs/bin/activate`
 
-`source activate /home/bcbb_teaching_files/intro_deep_learning/envs`
+Hopefully, if things work, this should make Tensorflow v2.1.0 and other libraries available to you to run the examples. You should see the folder path appear at the start of your terminal. Test by running:
+`python /home/bcbb_teaching_files/intro_deep_learning/1_keras_hello_world.py` and you should see a small model start to train and predict.
 
-
-This should make Tensorflow2 and other libraries available to you. At the moment, it appears an old version of conda is still installed causing the `conda activate` command to not work properly.
-
-## Installing on your own machine
+## Installing the environment on your own machine
 
 To run these you'll need python and the following packages installed. :
   * numpy 
