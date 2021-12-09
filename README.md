@@ -8,9 +8,9 @@ Example files are located in: `/home/bcbb_teaching_files/intro_deep_learning/`
 
 NOTE: I suggest you either clone this GitHub repo or copy the HPC files to a folder in your local home directory! Please do not modify the python scripts in the course directory above.
 
-## Activate the conda environment so we can use Tensorflow and Keras on the HPC: 
+#### Activate the conda environment so we can use Tensorflow and Keras on the HPC: 
 
-### First log into the HPC and check that you have `conda` available to you by typing:
+#### First log into the HPC and check that you have `conda` available to you by typing:
 `which conda`
 
 #### *If nothing is returned* you need to initialize conda for your environment:
