@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+# -*- coding: utf-8 -*-
 '''
  keras_hello_world.R
  By: Dan Veltri (dan.veltri@gmail.com)
